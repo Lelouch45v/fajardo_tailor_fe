@@ -141,6 +141,7 @@ body{
 }
 
 .nav-link.dropdown-toggle{
+  text-align: left;
     
 }
 
@@ -245,7 +246,7 @@ footer a:hover{
         border-bottom: none;
     }
 
-
+}
 
 html{
     scroll-behavior: smooth;
