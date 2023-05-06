@@ -1,3 +1,9 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from "react-router-dom";
+
 function NavBar() {
     return (
         <>
@@ -20,7 +26,7 @@ function NavBar() {
                         <button type = "button" className = "btn position-relative">
                             <i className = "fa fa-search"></i>
                         </button>
-                        <button onclick="myFunction()">
+                        <button onclick="myFunction() ">
                             <i className="fa-regular fa-moon"></i>
                         </button>
                         
@@ -44,8 +50,8 @@ function NavBar() {
                                 <a className="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 PRODUCT</a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a className="dropdown-item" href="bedsheet.html">Bedsheet</a></li>
-                        <li><a className="dropdown-item" href="curtains.html">Curtains</a></li>
+                            <li><a className="dropdown-item" href="bedsheet.html">Bedsheet</a></li>
+                            <li><a className="dropdown-item" href="curtains.html">Curtains</a></li>
                         </ul>
                     </li>
                             <li className = "nav-item px-2 py-2">

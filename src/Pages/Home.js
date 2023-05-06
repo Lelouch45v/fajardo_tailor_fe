@@ -1,92 +1,9 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
-import React from 'react';
-
 function Home() {
     
     return (
         <div>
-            <nav className = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
-                <div className = "container">
-                    <a className = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
-                        <img src = "images/logo_icon.png" alt = "site icon"/>
-                        <span className = "text-uppercase fw-lighter ms-2">Fajardo Tailor</span>
-                    </a>
 
-                    <div className = "order-lg-2 nav-btns">
-                        <button type = "button" className = "btn position-relative">
-                            <i className = "fa fa-shopping-cart"></i>
-                            <span className = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
-                        </button>
-                        <button type = "button" className = "btn position-relative">
-                            <i className = "fa fa-heart"></i>
-                            <span className = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
-                        </button>
-                        <button type = "button" className = "btn position-relative">
-                            <i className = "fa fa-search"></i>
-                        </button>
-                        <button onclick="myFunction()">
-                            <i className="fa-regular fa-moon"></i>
-                        </button>
-                        
-                    </div> 
-                        <button className = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
-                            <span className = "navbar-toggler-icon"></span>
-                        </button>
-
-                    <div className = "collapse navbar-collapse order-lg-1" id = "navMenu">
-                        <ul className = "navbar-nav mx-auto text-center">
-                            <li className = "nav-item px-2 py-2">
-                                <a className = "nav-link text-uppercase text-dark" href = "#header">home</a>
-                            </li>
-                            <li className = "nav-item px-2 py-2">
-                                <a className = "nav-link text-uppercase text-dark" href = "#collection">collection</a>
-                            </li>
-                            <li className = "nav-item px-2 py-2">
-                                <a className = "nav-link text-uppercase text-dark" href = "#special">specials</a>
-                            </li>
-                            <li className="nav-item px-2 py-2 dropdown">
-                                <a className="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                PRODUCT</a>
-                        <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a className="dropdown-item" href="bedsheet.html">Bedsheet</a></li>
-                        <li><a className="dropdown-item" href="curtains.html">Curtains</a></li>
-                        </ul>
-                    </li>
-                            <li className = "nav-item px-2 py-2">
-                                <a className = "nav-link text-uppercase text-dark" href = "#about">about us</a>
-                            </li>
-                            <li className = "nav-item px-2 py-2 border-0">
-                                <a className = "nav-link text-uppercase text-dark" href = "#popular">popular</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-            <header id = "header" className = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
-                <div className = "container h-100 d-flex align-items-center carousel-inner">
-                    <div className = "text-center carousel-item active">
-                        <h2 className = "text-capitalize text-white">best collection</h2>
-                        <h1 className = "text-uppercase py-2 fw-bold text-white">new arrivals</h1>
-                        <a href = "#" className = "btn mt-3 text-uppercase">shop now</a>
-                    </div>
-                    <div className = "text-center carousel-item">
-                        <h2 className = "text-capitalize text-white">best price & offer</h2>
-                        <h1 className = "text-uppercase py-2 fw-bold text-white">new season</h1>
-                        <a href = "#" className = "btn mt-3 text-uppercase">buy now</a>
-                    </div>
-                </div>
-
-                <button className = "carousel-control-prev" type = "button" data-bs-target="#header" data-bs-slide = "prev">
-                    <span className = "carousel-control-prev-icon"></span>
-                </button>
-                <button className = "carousel-control-next" type = "button" data-bs-target="#header" data-bs-slide = "next">
-                    <span className = "carousel-control-next-icon"></span>
-                </button>
-            </header>
-
-            <Section id = "collection" className = "py-5">
+            <section id = "collection" className = "py-5">
                 <div className = "container">
                     <div className = "title text-center">
                         <h2 className = "position-relative d-inline-block">New Collection</h2>
@@ -248,12 +165,12 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </Section>
+            </section>
 
-            <Section id = "special" className = "py-5">
+            <section id = "special" className = "py-5">
                 <div className = "container">
                     <div className = "title text-center py-5">
-                        <h2 className = "position-relative d-inline-block">Special Section</h2>
+                        <h2 className = "position-relative d-inline-block">Special section</h2>
                     </div>
 
                     <div className = "special-list row g-0">
@@ -314,9 +231,9 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </Section>
+            </section>
 
-            <Section id = "about" className = "py-5">
+            <section id = "about" className = "py-5">
                 <div className = "container">
                     <div className = "row gy-lg-5 align-items-center">
                         <div className = "col-lg-6 order-lg-1 text-center text-lg-start">
@@ -331,9 +248,9 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </Section>
+            </section>
 
-            <Section id = "popular" className = "py-5">
+            <section id = "popular" className = "py-5">
                 <div className = "container">
                     <div className = "title text-center pt-3 pb-5">
                         <h2 className = "position-relative d-inline-block ms-4">Popular For This Year</h2>
@@ -416,97 +333,7 @@ function Home() {
                                 </div>
                         </div>
                 </div>
-            </Section>
-
-            <footer className = "bg-dark py-5">
-                <div className = "container">
-                    <div className = "row text-white g-4">
-                        <div className = "col-md-6 col-lg-3">
-                            <a className = "text-uppercase text-decoration-none brand text-white" href = "index.html">Fajardo Tailor</a>
-                            <p className = "text-white text-muted mt-3">This shop runs by Fajardo Family that started during pandemic while our Convenience store addedd some sewing machine and we decide to become Convenience store and sewing shop that always available</p>
-                        </div>
-
-                        <div className = "col-md-6 col-lg-3">
-                            <h5 className = "fw-light">Links</h5>
-                            <ul className = "list-unstyled">
-                                <li className = "my-3">
-                                    <a href = "#" className = "text-white text-decoration-none text-muted">
-                                        <i className = "fas fa-chevron-right me-1"></i> Home
-                                    </a>
-                                </li>
-                                <li className = "my-3">
-                                    <a href = "#" className = "text-white text-decoration-none text-muted">
-                                        <i className = "fas fa-chevron-right me-1"></i> Collection
-                                    </a>
-                                </li>
-                                
-                                
-                                <li className = "my-3">
-                                    <a href = "#" className = "text-white text-decoration-none text-muted">
-                                        <i className = "fas fa-chevron-right me-1"></i> About Us
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className = "col-md-6 col-lg-3">
-                            <h5 className = "fw-light mb-3">Contact Us</h5>
-                            <div className = "d-flex justify-content-start align-items-start my-2 text-muted">
-                                <span className = "me-3">
-                                    <i className = "fas fa-map-marked-alt"></i>
-                                </span>
-                                <span className = "fw-light">
-                                    187 Don.t. herrera, Sta. Quiteria Caloocan City,Philippines
-                                </span>
-                            </div>
-                            <div className = "d-flex justify-content-start align-items-start my-2 text-muted">
-                                <span className = "me-3">
-                                    <i className = "fas fa-envelope"></i>
-                                </span>
-                                <span className = "fw-light">
-                                    Fajardo_SewingShop@gmail.com
-                                </span>
-                            </div>
-                            <div className = "d-flex justify-content-start align-items-start my-2 text-muted">
-                                <span className = "me-3">
-                                    <i className = "fas fa-phone-alt"></i>
-                                </span>
-                                <span className = "fw-light">
-                                    +639204340677
-                                </span>
-                            </div>
-                        </div>
-
-                        <div className = "col-md-6 col-lg-3">
-                            <h5 className = "fw-light mb-3">Follow Us</h5>
-                            <div>
-                                <ul className = "list-unstyled d-flex">
-                                    <li>
-                                        <a href = "https://www.facebook.com/profile.php?id=100064281574087" className = "text-white text-decoration-none text-muted fs-4 me-4">
-                                            <i className = "fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "#" className = "text-white text-decoration-none text-muted fs-4 me-4">
-                                            <i className = "fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "#" className = "text-white text-decoration-none text-muted fs-4 me-4">
-                                            <i className = "fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "#" className = "text-white text-decoration-none text-muted fs-4 me-4">
-                                            <i className = "fab fa-pinterest"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            </section>
 
         </div>
             
