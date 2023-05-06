@@ -1,11 +1,16 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
     return (
         <>
             <footer className = "bg-dark py-5">
                 <div className = "container">
+                    
                     <div className = "row text-white g-4">
                         <div className = "col-md-6 col-lg-3">
-                            <a className = "text-uppercase text-decoration-none brand text-white" href = "index.html">Fajardo Tailor</a>
+                            <Link to='/' className = "text-uppercase text-decoration-none brand text-white">
+                                Fajardo Tailor
+                            </Link>
                             <p className = "text-white text-muted mt-3">This shop runs by Fajardo Family that started during pandemic while our Convenience store addedd some sewing machine and we decide to become Convenience store and sewing shop that always available</p>
                         </div>
 
@@ -22,7 +27,6 @@ function Footer() {
                                         <i className = "fas fa-chevron-right me-1"></i> Collection
                                     </a>
                                 </li>
-                                
                                 
                                 <li className = "my-3">
                                     <a href = "#" className = "text-white text-decoration-none text-muted">

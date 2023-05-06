@@ -1,18 +1,20 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from "react-router-dom";
 
 function NavBar() {
+
+    const myFunction = () => {
+        /*var element = document.body;
+        element.classList.toggle("dark-mode");*/
+        }
+
     return (
         <>
             <nav className = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
                 <div className = "container">
-                    <a className = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
-                        <img src = "images/logo_icon.png" alt = "site icon"/>
+                    <Link to='/' className="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+                        <img src="images/logo_icon.png" alt = "site icon"/>
                         <span className = "text-uppercase fw-lighter ms-2">Fajardo Tailor</span>
-                    </a>
+                    </Link>
 
                     <div className = "order-lg-2 nav-btns">
                         <button type = "button" className = "btn position-relative">
@@ -38,7 +40,9 @@ function NavBar() {
                     <div className = "collapse navbar-collapse order-lg-1" id = "navMenu">
                         <ul className = "navbar-nav mx-auto text-center">
                             <li className = "nav-item px-2 py-2">
-                                <a className = "nav-link text-uppercase text-dark" href = "#header">home</a>
+                                <Link to='/' className = "nav-link text-uppercase text-dark">
+                                    Home
+                                </Link>
                             </li>
                             <li className = "nav-item px-2 py-2">
                                 <a className = "nav-link text-uppercase text-dark" href = "#collection">collection</a>

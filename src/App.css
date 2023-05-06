@@ -147,6 +147,7 @@ body {
 /* header */
 #header{
     background: url(../public/images/sew.png) top/cover no-repeat;
+    padding-top: 104px;
 }
 
 .carousel-inner h1{
@@ -447,4 +448,9 @@ header .shopping span{
 
 .listCard .count{
   margin: 0 10px;
+}
+
+button {
+  border-style: none;
+  background-color: #E3E7E8;
 }

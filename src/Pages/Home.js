@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home() {
     
     return (
@@ -11,17 +13,19 @@ function Home() {
 
                     <div className = "row g-0">
                         <div className = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
-                            <a href="all_Products.html" className="btn m-2 text-dark active-filter-btn" role="button">All</a>
-                            <a href="bestsellers.html" className="btn m-2 text-dark " role="button">Best Sellers</a>
+                            <button>
+                                <Link to='./' className="btn m-2 text-dark active-filter-btn" role="button">
+                                    All
+                                </Link>
+                            </button>
+                            <a href="new_arrival.html" className="btn m-2 text-dark " role="button">Best Sellers</a>
                             <a href="new_arrival.html" className="btn m-2 text-dark " role="button">New Arrival</a>
-
-
                         </div>
 
                         <div className = "collection-list mt-4 row gx-0 gy-3">
                             <div className = "col-md-6 col-lg-4 col-xl-3 p-2 best">
                                 <div className = "collection-img position-relative">
-                                    <img src = "images/Grey_Canadian.jpg" className = "w-100"/>
+                                    <img src = "images/Grey_Canadian.jpg" className = "w-100" alt=""/>
                                     <span className = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                                 </div>
                                 <div className = "text-center">
@@ -39,7 +43,7 @@ function Home() {
 
                             <div className = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
                                 <div className = "collection-img position-relative">
-                                    <img src = "images/Onepiece1.jpg" className = "w-100"/>
+                                    <img src = "images/Onepiece1.jpg" className = "w-100" alt=""/>
                                     <span className = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                                 </div>
                                 <div className = "text-center">
@@ -57,7 +61,7 @@ function Home() {
 
                             <div className = "col-md-6 col-lg-4 col-xl-3 p-2 new">
                                 <div className = "collection-img position-relative">
-                                    <img src = "images/naruto.jpg" className = "w-100"/>
+                                    <img src = "images/naruto.jpg" className = "w-100" alt=""/>
                                     <span className = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                                 </div>
                                 <div className = "text-center">
@@ -75,7 +79,7 @@ function Home() {
 
                             <div className = "col-md-6 col-lg-4 col-xl-3 p-2 best">
                                 <div className = "collection-img position-relative">
-                                    <img src = "images//solo-leveling.jpg" className = "w-100"/>
+                                    <img src = "images//solo-leveling.jpg" className = "w-100" alt=""/>
                                     <span className = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                                 </div>
                                 <div className = "text-center">
@@ -93,7 +97,7 @@ function Home() {
 
                             <div className = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
                                 <div className = "collection-img position-relative">
-                                    <img src = "images/samurai1.jpg" className = "w-100"/>
+                                    <img src = "images/samurai1.jpg" className = "w-100" alt=""/>
                                     <span className = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                                 </div>
                                 <div className = "text-center">
@@ -111,7 +115,7 @@ function Home() {
 
                             <div className = "col-md-6 col-lg-4 col-xl-3 p-2 new">
                                 <div className = "collection-img position-relative">
-                                    <img src = "images/evelyn.jpg" className = "w-100"/>
+                                    <img src = "images/evelyn.jpg" className = "w-100" alt=""/>
                                     <span className = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                                 </div>
                                 <div className = "text-center">
@@ -129,7 +133,7 @@ function Home() {
 
                             <div className = "col-md-6 col-lg-4 col-xl-3 p-2 best">
                                 <div className = "collection-img position-relative">
-                                    <img src = "images/demonslayer.jpg" className = "w-100"/>
+                                    <img src = "images/demonslayer.jpg" className = "w-100" alt=""/>
                                     <span className = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                                 </div>
                                 <div className = "text-center">
@@ -147,7 +151,7 @@ function Home() {
 
                             <div className = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
                                 <div className = "collection-img position-relative">
-                                    <img src = "images/buko1.jpeg" className = "w-100"/>
+                                    <img src = "images/buko1.jpeg" className = "w-100" alt=""/>
                                     <span className = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
                                 </div>
                                 <div className = "text-center">
@@ -176,7 +180,7 @@ function Home() {
                     <div className = "special-list row g-0">
                         <div className = "col-md-6 col-lg-4 col-xl-3 p-2">
                             <div className = "special-img position-relative overflow-hidden">
-                                <img src = "images/zoro1.jpeg" className = "w-100"/>
+                                <img src = "images/zoro1.jpeg" className = "w-100" alt=""/>
                                 <span className = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
                                     <i className = "fas fa-heart"></i>
                                 </span>
@@ -184,13 +188,15 @@ function Home() {
                             <div className = "text-center">
                                 <p className = "text-capitalize mt-3 mb-1">Zoro Onepiece Limited Edition</p>
                                 <span className = "fw-bold d-block">$ 30.50</span>
-                                <a href = "#" className = "btn btn-primary mt-3">Add to Cart</a>
+                                    <Link to='./Pages/AddToCart' className = "btn btn-primary mt-3">
+                                        Add to Cart
+                                    </Link>
                             </div>
                         </div>
 
                         <div className = "col-md-6 col-lg-4 col-xl-3 p-2">
                             <div className = "special-img position-relative overflow-hidden">
-                                <img src = "images/demon1.jpg" className = "w-100"/>
+                                <img src = "images/demon1.jpg" className = "w-100" alt=""/>
                                 <span className = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
                                     <i className = "fas fa-heart"></i>
                                 </span>
@@ -198,13 +204,15 @@ function Home() {
                             <div className = "text-center">
                                 <p className = "text-capitalize mt-3 mb-1">Nezuko Demon Slayer Full Set</p>
                                 <span className = "fw-bold d-block">$ 20.50</span>
-                                <a href = "#" className = "btn btn-primary mt-3">Add to Cart</a>
+                                <Link to='./Pages/AddToCart' className = "btn btn-primary mt-3">
+                                    Add to Cart
+                                </Link>
                             </div>
                         </div>
 
                         <div className = "col-md-6 col-lg-4 col-xl-3 p-2">
                             <div className = "special-img position-relative overflow-hidden">
-                                <img src = "images/akatsuki.jpg" className = "w-100"/>
+                                <img src = "images/akatsuki.jpg" className = "w-100" alt=""/>
                                 <span className = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
                                     <i className = "fas fa-heart"></i>
                                 </span>
@@ -212,13 +220,15 @@ function Home() {
                             <div className = "text-center">
                                 <p className = "text-capitalize mt-3 mb-1">Naruto Akatsuki Edition</p>
                                 <span className = "fw-bold d-block">$ 15.50</span>
-                                <a href = "#" className = "btn btn-primary mt-3">Add to Cart</a>
+                                <Link to='./Pages/AddToCart' className = "btn btn-primary mt-3">
+                                    Add to Cart
+                                </Link>
                             </div>
                         </div>
 
                         <div className = "col-md-6 col-lg-4 col-xl-3 p-2">
                             <div className = "special-img position-relative overflow-hidden">
-                                <img src = "images/madara.jpg" className = "w-100"/>
+                                <img src = "images/madara.jpg" className = "w-100" alt=""/>
                                 <span className = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
                                     <i className = "fas fa-heart"></i>
                                 </span>
@@ -226,7 +236,9 @@ function Home() {
                             <div className = "text-center">
                                 <p className = "text-capitalize mt-3 mb-1">Madara Uchiha Set</p>
                                 <span className = "fw-bold d-block">$ 12.50</span>
-                                <a href = "#" className = "btn btn-primary mt-3">Add to Cart</a>
+                                <Link to='./Pages/AddToCart' className = "btn btn-primary mt-3">
+                                    Add to Cart
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -363,12 +375,7 @@ function Home() {
                         function closeForm() {
                         document.getElementById("myForm").style.display = "none";
                         }
-
-
-                        function myFunction() {
-                        var element = document.body;
-                        element.classList.toggle("dark-mode");
-                        }
+}
                     </script>
 */
 
