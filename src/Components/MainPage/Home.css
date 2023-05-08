@@ -27,18 +27,3 @@
   left: 0;
   margin: auto;
 }
-
-.filters {
-  background-color: #343a40;
-  color: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  margin: 10px;
-  height: 86vh;
-}
-
-.filters > span {
-  padding-bottom: 20px;
-}
