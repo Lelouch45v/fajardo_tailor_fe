@@ -1,11 +1,11 @@
 footer {
-  background-color: #0f3460;
-  padding: 100px 0;
+  background-color: #303642;
+  padding: 100px;
   color: #fff;
 }
 footer h1 {
   margin-bottom: 30px;
-  color: #e94560;
+  color: #ccbf0a;
   font-weight: 800;
   font-style: italic;
 }
@@ -33,4 +33,8 @@ footer h2 {
 footer li {
   margin-bottom: 10px;
   opacity: 0.5;
+}
+footer .brand {
+  font-family: var(--lg-font);
+  letter-spacing: 2px;
 }
