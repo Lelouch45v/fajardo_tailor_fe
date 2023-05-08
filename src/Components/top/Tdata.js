@@ -24,6 +24,11 @@ const Tdata = [
     para: "sunglass",
     desc: "6k orders this week",
   },
+  {
+    cover: "./images/top/category-3.png",
+    para: "sunglass",
+    desc: "6k orders this week",
+  },
 ]
 
 export default Tdata
