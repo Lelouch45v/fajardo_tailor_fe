@@ -1,14 +1,15 @@
 import React from "react"
 import "./style.css"
 
+
 const Footer = () => {
   return (
     <>
-      <footer>
+      <footer className="bg dark py-5">
         <div className='container grid2'>
           <div className='box'>
-            <h1>Bonik</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.</p>
+            <h1>Fajardo Tailor</h1>
+            <p>This shop runs by Fajardo Family that started during pandemic while our Convenience store addedd some sewing machine and we decide to become Convenience store and sewing shop that always available</p>
             <div className='icon d_flex'>
               <div className='img d_flex'>
                 <i class='fa-brands fa-google-play'></i>
@@ -31,22 +32,38 @@ const Footer = () => {
               <li>Privacy Policy</li>
             </ul>
           </div>
-          <div className='box'>
-            <h2>Customer Care</h2>
-            <ul>
-              <li>Help Center </li>
-              <li>How to Buy </li>
-              <li>Track Your Order </li>
-              <li>Corporate & Bulk Purchasing </li>
-              <li>Returns & Refunds </li>
-            </ul>
-          </div>
+          
           <div className='box'>
             <h2>Contact Us</h2>
             <ul>
-              <li>70 Washington Square South, New York, NY 10012, United States </li>
-              <li>Email: uilib.help@gmail.com</li>
-              <li>Phone: +1 1123 456 780</li>
+              <li>187 Don.t. herrera, Sta. Quiteria Caloocan City,Philippines </li>
+              <li>Email: Fajardo_SewingShop@gmail.com</li>
+              <li>Phone: +639204340677</li>
+            </ul>
+          </div>
+          <div className='box'>
+            <h2>Follow Us</h2>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=100064281574087"> 
+                < i className="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"> 
+                < i className="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"> 
+                < i className="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"> 
+                < i className="fab fa-pinterest"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
