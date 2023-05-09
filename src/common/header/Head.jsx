@@ -7,7 +7,7 @@ const Head = () => {
         <div className='container d_flex'>
           <div className='left row'>
             <i className='fa fa-phone'></i>
-            <label> +09204340677</label>
+            <label> 09204340677</label>
             <i className='fa fa-envelope'></i>
             <label> lelouch45v@gmail.com</label>
           </div>
