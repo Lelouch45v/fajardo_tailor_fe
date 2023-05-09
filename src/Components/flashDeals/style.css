@@ -1,4 +1,9 @@
 .flash {
-  background: #f6f9fc;
+  background: #ecf1f5;
   padding: 50px 0;
+ 
+}
+.img {
+  height: auto;
+  width: auto;
 }
