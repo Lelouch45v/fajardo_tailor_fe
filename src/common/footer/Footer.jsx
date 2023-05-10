@@ -1,6 +1,7 @@
 import React from "react"
 import "./style.css"
 
+
 const Footer = () => {
   return (
     <>
@@ -49,6 +50,7 @@ const Footer = () => {
               <li>Phone: +1 1123 456 780</li>
             </ul>
           </div>
+          
         </div>
       </footer>
     </>
