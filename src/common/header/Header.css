@@ -91,6 +91,7 @@
 header {
   height: 8vh;
   box-shadow: -1px 15px 17px -8px rgba(0, 0, 0, 0.1);
+  size-adjust: auto;
 }
 header ul {
   line-height: 8vh;
@@ -172,4 +173,8 @@ header ul li a:hover {
   .header.active {
     height: 10vh;
   }
+}
+.navlink {
+  justify-content: center;
+  text-align: center;
 }
