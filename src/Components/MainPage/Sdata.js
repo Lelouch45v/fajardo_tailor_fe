@@ -2,7 +2,7 @@ const Sdata = [
   {
     id: 1,
     title: "50% Off For Your First Shopping",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.",
+    desc: "To Get our new item for today best selling is Tote bag and bedsheets.",
     cover: "./images/SlideCard/slide-1.png",
   },
   {
