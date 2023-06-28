@@ -1,6 +1,6 @@
 /*------head-----------*/
 .head {
-  background-color: #0f3460;
+  background-color: #040505;
   padding: 10px 0;
   color: #fff;
 }
@@ -174,7 +174,4 @@ header ul li a:hover {
     height: 10vh;
   }
 }
-.navlink {
-  justify-content: center;
-  text-align: center;
-}
+
