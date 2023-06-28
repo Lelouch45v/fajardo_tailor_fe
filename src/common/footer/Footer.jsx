@@ -21,10 +21,15 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
           <div className='box'>
             <h2>About Us</h2>
-              <h2> </h2>
+            <ul>
+              <li>Careers</li>
+              <li>Our Stores</li>
+              <li>Our Cares</li>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+            </ul>
           </div>
           <div className='box'>
             <h2>Customer Care</h2>
